@@ -60,6 +60,7 @@ public class App {
                 randomAccessFile.read(intensityAbsolutBuffer, 0, intensityAbsolutBuffer.length);
                 String newIntensityLine = "";
                 newIntensityLine = getHexStringFromByteArray(intensityAbsolutBuffer);
+                // ToDo REALISE Convertation from dword hex to int
                 if (newIntensityLine.charAt(0) == 'F' ||
                     (newIntensityLine.charAt(0) == 'F' && newIntensityLine.charAt(1) == 'F') ||
                     (newIntensityLine.charAt(0) == 'F' && newIntensityLine.charAt(1) == 'F' &&
@@ -67,10 +68,10 @@ public class App {
                     (newIntensityLine.charAt(0) == 'F' && newIntensityLine.charAt(1) == 'F' &&
                      newIntensityLine.charAt(2) == 'F' && newIntensityLine.charAt(3) == 'F')) {
                     int n = Integer.parseInt(newIntensityLine, 16) - 65536;
-                    newIntensityLine = "" + n;
+//                    newIntensityLine = "" + n;
                 } else {
                     int n = Integer.parseInt(newIntensityLine, 16);
-                    newIntensityLine = "" + n;
+//                    newIntensityLine = "" + n;
                 }
                 // prepare time point value inside new string for output file
                 newResultTimeMsIntensityAbsString = timeRespectToIntensityPoint + "," + newIntensityLine.trim() + "\n";
