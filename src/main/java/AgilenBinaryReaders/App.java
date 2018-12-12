@@ -22,6 +22,8 @@ public class App {
 
         // time scale start value set
         int timeRespectToIntensityPoint = 325;
+        // step of intensity abs set
+        int intensityValue = 0;
         // time scale step set
         int timeDeltaIncrease = 400;
 
@@ -59,8 +61,11 @@ public class App {
                 // read bytes of intensity value from set position into temporary buffer
                 randomAccessFile.read(intensityAbsolutBuffer, 0, intensityAbsolutBuffer.length);
                 String newIntensityLine = "";
-
-                newIntensityLine = "" + (short) hex2Decimal(getHexStringFromByteArray(intensityAbsolutBuffer));
+                short
+                        currentIntensityStepValue =
+                        (short) hex2Decimal(getHexStringFromByteArray(intensityAbsolutBuffer));
+                intensityValue = intensityValue + currentIntensityStepValue;
+                newIntensityLine = "" + intensityValue;
                 // prepare time point value inside new string for output file
                 newResultTimeMsIntensityAbsString = timeRespectToIntensityPoint + "," + newIntensityLine.trim() + "\n";
                 char[] newLineArray = newResultTimeMsIntensityAbsString.toCharArray();
