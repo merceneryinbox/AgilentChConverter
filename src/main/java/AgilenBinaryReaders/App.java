@@ -59,7 +59,8 @@ public class App {
                 // read bytes of intensity value from set position into temporary buffer
                 randomAccessFile.read(intensityAbsolutBuffer, 0, intensityAbsolutBuffer.length);
                 String newIntensityLine = "";
-                newIntensityLine = "" + hex2Decimal(getHexStringFromByteArray(intensityAbsolutBuffer));
+
+                newIntensityLine = "" + (short) hex2Decimal(getHexStringFromByteArray(intensityAbsolutBuffer));
                 // prepare time point value inside new string for output file
                 newResultTimeMsIntensityAbsString = timeRespectToIntensityPoint + "," + newIntensityLine.trim() + "\n";
                 char[] newLineArray = newResultTimeMsIntensityAbsString.toCharArray();
