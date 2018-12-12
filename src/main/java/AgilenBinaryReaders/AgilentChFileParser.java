@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
-public class App {
+public class AgilentChFileParser {
     // utility for convert
     final static char[] hexArray = "0123456789ABCDEF".toCharArray();
 

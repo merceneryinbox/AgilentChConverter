@@ -1,13 +1,13 @@
 package AgilenBinaryReaders;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
 
+import static org.junit.Assert.assertTrue;
+
 /**
- * Unit test for simple App.
+ * Unit test for simple AgilentChFileParser.
  */
-public class AppTest 
+public class AgilentChFileParserTest
 {
     /**
      * Rigorous Test :-)

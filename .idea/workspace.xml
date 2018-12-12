@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a6d904b8-fcb4-47c8-a096-8aa76d67ca3f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/AgilentReader_jar/AgilentReader.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/AgilentReader_jar/AgilentReader.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AgilenBinaryReaders/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AgilenBinaryReaders/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AgilenBinaryReaders/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AgilenBinaryReaders/AgilentChFileParserTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,10 +18,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/App.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+            <state relative-caret-position="484">
+              <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getHexStringFromByteArray#0;class#App#0" expanded="true" />
@@ -62,6 +62,7 @@
         <option value="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/Test.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java" />
       </list>
     </option>
   </component>
@@ -188,9 +189,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AgilenBinaryReaders.App" />
+  <component name="RunManager" selected="Application.AgilentChFileParser">
+    <configuration name="AgilentChFileParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AgilenBinaryReaders.AgilentChFileParser" />
       <module name="AgilentReader" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -273,7 +274,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
+        <item itemvalue="Application.AgilentChFileParser" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.FseekTest" />
       </list>
@@ -318,14 +319,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544603074666</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="done">
+      <created>1544605927437</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544605927437</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="0" width="1536" height="1177" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14554243" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14554243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -333,8 +341,8 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="DB Browser" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32880846" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.15906432" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32865733" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23246492" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.22775264" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -367,7 +375,8 @@
     <MESSAGE value="todos" />
     <MESSAGE value="got unsigned int TODO take signed from it" />
     <MESSAGE value="signed cast done" />
-    <option name="LAST_COMMIT_MESSAGE" value="signed cast done" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -395,7 +404,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AgilenBinaryReaders/AppTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/AgilenBinaryReaders/AgilentChFileParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
@@ -405,10 +414,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/App.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+        <state relative-caret-position="484">
+          <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getHexStringFromByteArray#0;class#App#0" expanded="true" />
