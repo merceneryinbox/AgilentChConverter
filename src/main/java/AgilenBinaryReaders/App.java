@@ -45,7 +45,7 @@ public class App {
             int randomFileLengthCount = 0;
 
             // main loop start until counter less than .ch file length
-            while (randomFileLengthCount < randomFileLength) {
+            while (randomFileLengthCount < 12181) {
 
                 // file length counter set
                 randomFileLengthCount++;
@@ -59,20 +59,7 @@ public class App {
                 // read bytes of intensity value from set position into temporary buffer
                 randomAccessFile.read(intensityAbsolutBuffer, 0, intensityAbsolutBuffer.length);
                 String newIntensityLine = "";
-                newIntensityLine = getHexStringFromByteArray(intensityAbsolutBuffer);
-                // ToDo REALISE Convertation from dword hex to int
-                if (newIntensityLine.charAt(0) == 'F' ||
-                    (newIntensityLine.charAt(0) == 'F' && newIntensityLine.charAt(1) == 'F') ||
-                    (newIntensityLine.charAt(0) == 'F' && newIntensityLine.charAt(1) == 'F' &&
-                     newIntensityLine.charAt(2) == 'F') ||
-                    (newIntensityLine.charAt(0) == 'F' && newIntensityLine.charAt(1) == 'F' &&
-                     newIntensityLine.charAt(2) == 'F' && newIntensityLine.charAt(3) == 'F')) {
-                    int n = Integer.parseInt(newIntensityLine, 16) - 65536;
-//                    newIntensityLine = "" + n;
-                } else {
-                    int n = Integer.parseInt(newIntensityLine, 16);
-//                    newIntensityLine = "" + n;
-                }
+                newIntensityLine = "" + hex2Decimal(getHexStringFromByteArray(intensityAbsolutBuffer));
                 // prepare time point value inside new string for output file
                 newResultTimeMsIntensityAbsString = timeRespectToIntensityPoint + "," + newIntensityLine.trim() + "\n";
                 char[] newLineArray = newResultTimeMsIntensityAbsString.toCharArray();
@@ -104,5 +91,17 @@ public class App {
             result = result | (bytes[i] & 0xff) >> (i * 8);
         }
         return result;
+    }
+
+    public static int hex2Decimal(String s) {
+        String digits = "0123456789ABCDEF";
+        s = s.toUpperCase();
+        int val = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            int d = digits.indexOf(c);
+            val = 16 * val + d;
+        }
+        return val;
     }
 }
