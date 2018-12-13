@@ -23,13 +23,16 @@ public class AgilentChFileParserNIO_2 {
     
     public static void main(String[] args) throws IOException {
         //resources opening
-        File fileOut = new File(args.length != 2 ? defaultOutputFile : args[1]);
+        File fileOut = new File(args.length != getIntensityDeltaIncreaseStep() ? defaultOutputFile : args[1]);
         fileOut.createNewFile();
         /////////////////////////////////////////////////////////////////////////////////////////////
-        byte[] fullChInByteArray = Files.readAllBytes(Paths.get(args.length != 2 ? defaultOutputFile : args[0]));
+        byte[] fullChInByteArray = Files.readAllBytes(Paths.get(
+                args.length != getIntensityDeltaIncreaseStep() ? defaultOutputFile : args[getInitialIntensityValue()]));
         //////////////////////////////////////////////////////////////////////////////////////////////
-        RandomAccessFile randomAccessFile = new RandomAccessFile(args.length != 2 ? defaultChFilePath : args[0], "r");
-        byte[] intensityAbsolutBuffer = new byte[2];
+        RandomAccessFile randomAccessFile = new RandomAccessFile(
+                args.length != getIntensityDeltaIncreaseStep() ? defaultChFilePath : args[getInitialIntensityValue()],
+                "r");
+        byte[] intensityAbsolutBuffer = new byte[getIntensityDeltaIncreaseStep()];
         //        for (int i = 0; i < intensityAbsolutBuffer.length; i++) {
         //            intensityAbsolutBuffer[i] = fullChInByteArray[6148 + i];
         //        }
@@ -37,45 +40,46 @@ public class AgilentChFileParserNIO_2 {
         //        System.exit(0);
         
         // time scale start value set
-        int timeRespectToIntensityPoint = 325;
+        int timeRespectToIntensityPoint = getTimeRespectToIntensityPoint();
         // step of intensity abs set
-        int intensityValue = 0;
+        int intensityValue = getInitialIntensityValue();
         // time scale step set
-        int timeDeltaIncrease = 400;
+        int timeDeltaIncrease = getTimeDeltaIncrease();
         
         // start of valuable part of table hex = 1802, dec = 6146
-        int intensityAbsolutOffsetPoint = 6146;
+        int intensityAbsolutOffsetPoint = getInitialIntensityAbsolutOffsetPoint();
         // intensity steps set
-        int intensityDeltaIncrease = 2;
+        int intensityDeltaIncrease = getIntensityDeltaIncreaseStep();
         
         try {
             // temp var set
-            int randomFileLengthCount = 0;
+            int randomFileLengthCount = getInitialIntensityValue();
             
             // common byte array
-            char[] commonCharArray = new char[12181];
+            char[] commonCharArray = new char[getCommonByteArraySize()];
             
             // create new line for output
             String newResultTimeMsIntensityAbsString = "";
             
             // main loop start until counter less than .ch file length
-            while (randomFileLengthCount < 12181) {
-    
+            while (randomFileLengthCount < getCommonByteArraySize()) {
+                
                 // file length counter set
                 randomFileLengthCount++;
-    
+                
                 // reader pointer in source .ch file set
                 randomAccessFile.seek(intensityAbsolutOffsetPoint);
-    
+                
                 // read bytes of intensity value from set position into temporary buffer
-                randomAccessFile.read(intensityAbsolutBuffer, 0, intensityAbsolutBuffer.length);
-                short currentIntensityStepValue
-                        = (short) hexString2Decimal(byteArray2HexString(intensityAbsolutBuffer));
+                randomAccessFile.read(intensityAbsolutBuffer,
+                                      getInitialIntensityValue(),
+                                      intensityAbsolutBuffer.length);
+                short currentIntensityStepValue = (short) hexString2Decimal(byteArray2HexString(intensityAbsolutBuffer));
                 intensityValue = intensityValue + currentIntensityStepValue;
                 // prepare time point value inside new string for output file
                 newResultTimeMsIntensityAbsString = timeRespectToIntensityPoint + "," + intensityValue + "\n";
                 char[] newLineArray = newResultTimeMsIntensityAbsString.toCharArray();
-                for (int i = 0; i < newLineArray.length; i++) {
+                for (int i = getInitialIntensityValue(); i < newLineArray.length; i++) {
                     commonCharArray[i] = newLineArray[i];
                 }
                 timeRespectToIntensityPoint = timeRespectToIntensityPoint + timeDeltaIncrease;
@@ -96,26 +100,56 @@ public class AgilentChFileParserNIO_2 {
         }
     }
     
-    private static Path getOutPath(String[] args) {
+    private static int getCommonByteArraySize() {
         
-        return Paths.get(args.length != 2 ? defaultOutputFile : args[1]);
+        return 12181;
+    }
+    
+    private static int getIntensityDeltaIncreaseStep() {
+        
+        return 2;
+    }
+    
+    private static int getInitialIntensityAbsolutOffsetPoint() {
+        
+        return 6146;
+    }
+    
+    private static int getTimeDeltaIncrease() {
+        
+        return 400;
+    }
+    
+    private static int getInitialIntensityValue() {
+        
+        return 0;
+    }
+    
+    private static int getTimeRespectToIntensityPoint() {
+        
+        return 325;
+    }
+    
+    private static Path getOutPath(String[] args) {
+    
+        return Paths.get(args.length != getIntensityDeltaIncreaseStep() ? defaultOutputFile : args[1]);
     }
     
     public static String byteArray2HexString(byte[] bytes) {
-        
-        char[] hexChars = new char[bytes.length * 2];
-        for (int j = 0; j < bytes.length; j++) {
+    
+        char[] hexChars = new char[bytes.length * getIntensityDeltaIncreaseStep()];
+        for (int j = getInitialIntensityValue(); j < bytes.length; j++) {
             int v = bytes[j] & 0xFF;
-            hexChars[j * 2] = hexArray[v >>> 4];
-            hexChars[j * 2 + 1] = hexArray[v & 0x0F];
+            hexChars[j * getIntensityDeltaIncreaseStep()] = hexArray[v >>> 4];
+            hexChars[j * getIntensityDeltaIncreaseStep() + 1] = hexArray[v & 0x0F];
         }
         return new String(hexChars);
     }
     
     public static int getDecimalFromHexByteArray(byte[] bytes) {
-        
-        int result = 0;
-        for (int i = 0; i < bytes.length; i++) {
+    
+        int result = getInitialIntensityValue();
+        for (int i = getInitialIntensityValue(); i < bytes.length; i++) {
             result = result | (bytes[i] & 0xff) >> (i * 8);
         }
         return result;
@@ -125,8 +159,8 @@ public class AgilentChFileParserNIO_2 {
         
         String digits = "0123456789ABCDEF";
         s = s.toUpperCase();
-        int val = 0;
-        for (int i = 0; i < s.length(); i++) {
+        int val = getInitialIntensityValue();
+        for (int i = getInitialIntensityValue(); i < s.length(); i++) {
             char c = s.charAt(i);
             int d = digits.indexOf(c);
             val = 16 * val + d;
