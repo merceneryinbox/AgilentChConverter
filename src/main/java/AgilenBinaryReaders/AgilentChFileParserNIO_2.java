@@ -71,8 +71,7 @@ public class AgilentChFileParserNIO_2 {
                 randomAccessFile.seek(intensityAbsolutOffsetPoint);
                 
                 // read bytes of intensity value from set position into temporary buffer
-                randomAccessFile.read(intensityAbsolutBuffer,
-                                      getInitialIntensityValue(),
+                randomAccessFile.read(intensityAbsolutBuffer, 0,
                                       intensityAbsolutBuffer.length);
                 short currentIntensityStepValue = (short) hexString2Decimal(byteArray2HexString(intensityAbsolutBuffer));
                 intensityValue = intensityValue + currentIntensityStepValue;
