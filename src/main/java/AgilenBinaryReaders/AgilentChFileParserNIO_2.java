@@ -35,11 +35,11 @@ public class AgilentChFileParserNIO_2 {
                 args.length != getIntensityDeltaIncreaseStep() ? defaultChFilePath : args[getInitialIntensityValue()],
                 "r");
         byte[] intensityAbsolutBuffer = new byte[getIntensityDeltaIncreaseStep()];
-        //        for (int i = 0; i < intensityAbsolutBuffer.length; i++) {
-        //            intensityAbsolutBuffer[i] = fullChInByteArray[6148 + i];
-        //        }
-        //        System.out.println((short) hexString2Decimal(byteArray2HexString(intensityAbsolutBuffer)));
-        //        System.exit(0);
+        for (int i = 0; i < intensityAbsolutBuffer.length; i++) {
+            intensityAbsolutBuffer[i] = fullChInByteArray[6148 + i];
+        }
+        System.out.println((short) hexString2Decimal(byteArray2HexString(intensityAbsolutBuffer)));
+        System.exit(0);
         
         // time scale start value set
         int timeRespectToIntensityPoint = getTimeRespectToIntensityPoint();
@@ -55,7 +55,7 @@ public class AgilentChFileParserNIO_2 {
         
         try {
             // temp var set
-            int randomFileLengthCount = getInitialIntensityValue();
+            int randomFilePointer = getInitialIntensityValue();
             
             // common byte array
             char[] commonCharArray = new char[getCommonByteArraySize()];
@@ -64,10 +64,10 @@ public class AgilentChFileParserNIO_2 {
             String newResultTimeMsIntensityAbsString = "";
             
             // main loop start until counter less than .ch file length
-            while (randomFileLengthCount < getCommonByteArraySize()) {
+            while (randomFilePointer < getCommonByteArraySize()) {
                 
                 // file length counter set
-                randomFileLengthCount++;
+                randomFilePointer++;
                 
                 // reader pointer in source .ch file set
                 randomAccessFile.seek(intensityAbsolutOffsetPoint);
