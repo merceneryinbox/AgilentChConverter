@@ -22,6 +22,8 @@ public class AgilentChFileParserNIO_2 {
     
     
     public static void main(String[] args) throws IOException {
+    
+        Path outPath = getOutPath(args);
         //resources opening
         File fileOut = new File(args.length != getIntensityDeltaIncreaseStep() ? defaultOutputFile : args[1]);
         fileOut.createNewFile();
@@ -85,11 +87,11 @@ public class AgilentChFileParserNIO_2 {
                 intensityAbsolutOffsetPoint = intensityAbsolutOffsetPoint + intensityDeltaIncrease;
             }
             // header in file creation
-            Files.write(getOutPath(args),
+            Files.write(outPath,
                         (charset.encode(CharBuffer.wrap(headerCharArray))
                                 .array()),
                         StandardOpenOption.WRITE);
-            Files.write(getOutPath(args),
+            Files.write(outPath,
                         (charset.encode(CharBuffer.wrap(commonCharArray))
                                 .array()),
                         StandardOpenOption.APPEND);
