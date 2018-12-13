@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9c2c4efb-dbfd-40ca-9997-81969e0733fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,13 +39,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="32" />
-          <entry key="java" value="451" />
+          <entry key="java" value="615" />
           <entry key="txt" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="451" />
+          <entry key="JAVA" value="615" />
           <entry key="PLAIN_TEXT" value="94" />
         </counts>
       </usages-collector>
@@ -55,11 +56,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="112" selection-end-column="19" />
+            <state relative-caret-position="1312">
+              <caret line="85" column="48" lean-forward="true" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
               <folding>
                 <element signature="method#main#0;class#AgilentChFileParser#0" expanded="true" />
-                <element signature="method#getHexStringFromByteArray#0;class#AgilentChFileParser#0" expanded="true" />
+                <element signature="method#hex2Decimal#0;class#AgilentChFileParser#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,21 +69,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="57" column="11" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
+            <state relative-caret-position="180">
+              <caret line="56" column="87" selection-start-line="56" selection-start-column="87" selection-end-line="56" selection-end-column="87" />
               <folding>
-                <element signature="method#timePointNextStep#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#outPutFileOpen#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#getReadFileToDrive#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
+                <element signature="method#intensityPointNextStep#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
                 <element signature="method#getIntensityAbsTmpBufferSize#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#getIntensityDeltaIncreaseStep#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#getInitialIntensityValue#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
+                <element signature="method#getCommonByteArraySize#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getCommonByteArraySize</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>commonByteArraySize</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -211,7 +217,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544733928839" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544734875601" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_192/bin/jvisualvm.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -230,7 +236,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.AgilentChFileParser">
+    <configuration name="AgilentChFileParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AgilenBinaryReaders.AgilentChFileParser" />
+      <module name="AgilentReader" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AgilenBinaryReaders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AgilentChFileParserNIO_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AgilenBinaryReaders.AgilentChFileParserNIO_2" />
       <module name="AgilentReader" />
@@ -265,8 +285,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.AgilentChFileParserNIO_2" />
+      <item itemvalue="Application.AgilentChFileParser" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AgilentChFileParser" />
         <item itemvalue="Application.AgilentChFileParserNIO_2" />
       </list>
     </recent_temporary>
@@ -284,7 +309,7 @@
       <workItem from="1544648241121" duration="684000" />
       <workItem from="1544649171174" duration="665000" />
       <workItem from="1544718983054" duration="957000" />
-      <workItem from="1544728144298" duration="5688000" />
+      <workItem from="1544728144298" duration="6643000" />
     </task>
     <task id="LOCAL-00001" summary="beautify">
       <created>1544649819175</created>
@@ -328,11 +353,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544731318066</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="corrections">
+      <created>1544733976164</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1544733976164</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7994000" />
+    <option name="totallyTimeSpent" value="8949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -414,13 +446,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java</url>
-          <line>54</line>
+          <line>59</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java</url>
-          <line>58</line>
+          <line>63</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -444,26 +476,23 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="112" selection-end-column="19" />
+        <state relative-caret-position="1312">
+          <caret line="85" column="48" lean-forward="true" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
           <folding>
             <element signature="method#main#0;class#AgilentChFileParser#0" expanded="true" />
-            <element signature="method#getHexStringFromByteArray#0;class#AgilentChFileParser#0" expanded="true" />
+            <element signature="method#hex2Decimal#0;class#AgilentChFileParser#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="57" column="11" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
+        <state relative-caret-position="180">
+          <caret line="56" column="87" selection-start-line="56" selection-start-column="87" selection-end-line="56" selection-end-column="87" />
           <folding>
-            <element signature="method#timePointNextStep#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#outPutFileOpen#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#getReadFileToDrive#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
+            <element signature="method#intensityPointNextStep#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
             <element signature="method#getIntensityAbsTmpBufferSize#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#getIntensityDeltaIncreaseStep#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#getInitialIntensityValue#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
+            <element signature="method#getCommonByteArraySize#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -19,7 +19,7 @@ public class AgilentChFileParser {
         //resources opening
         File fileOut = new File(args.length != 2 ? defaultOutputFile : args[1]);
         fileOut.createNewFile();
-
+    
         RandomAccessFile randomAccessFile = new RandomAccessFile(args.length != 2 ? defaultChFilePath : args[0], "r");
         byte[] intensityAbsolutBuffer = new byte[2];
     
