@@ -72,10 +72,9 @@ public class AgilentChFileParserNIO_2 {
 			}
 
 			// store time points correspond to intensity into result csv file
-			Files.write(getOutPath(args), (charset.encode(CharBuffer.wrap(resultStringAppender.toString().toCharArray())).array()), StandardOpenOption.CREATE_NEW);
+			Files.write(getOutPath(args), (charset.encode(CharBuffer.wrap(resultStringAppender.toString().toCharArray())).array()), StandardOpenOption.CREATE);
 		} catch (FileNotFoundException fnf) {
-			System.err.println("Input file " + defaultChFilePath + "seem to be in some another place or it's have been opened in time of access." + "\nPlease check this before " +
-			                   "new attempt !");
+			System.err.println("Input file " + defaultChFilePath + "seem to be in some another place or it's have been opened in time of access." + "\nPlease check this before " + "new attempt !");
 		}
 	}
 
