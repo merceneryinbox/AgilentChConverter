@@ -20,9 +20,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="AgilentReader" />
+        <module name="AgilentChFileParserNIO_2" />
         <module name="maven-archiver" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AgilentChFileParserNIO_2" target="1.8" />
+      <module name="AgilentReader" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

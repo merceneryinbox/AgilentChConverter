@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="AgilentChFileParserNIO_2:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eb25c4e-17a7-49dd-a9a0-84a6cc4f5ba4" name="Default Changelist" comment="NIO 2 works">
+    <list default="true" id="9eb25c4e-17a7-49dd-a9a0-84a6cc4f5ba4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/AgilentChFileParserNIO_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AgilentReader_jar/AgilentReader.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/AgilentReader_jar/AgilentReader.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AgilentReader-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AgilenBinaryReaders.AppTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AgilenBinaryReaders.AppTest.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,10 +36,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="74" column="154" selection-start-line="74" selection-start-column="154" selection-end-line="74" selection-end-column="154" />
+            <state relative-caret-position="258">
+              <caret line="16" column="76" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#main#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,6 +63,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -58,6 +79,12 @@
         <option name="lookForNested" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1" />
@@ -79,6 +106,24 @@
             <path>
               <item name="AgilentChConverter" type="b2602c69:ProjectViewProjectNode" />
               <item name="AgilentChConverter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AgilentChConverter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AgilentChConverter" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AgilentChConverter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AgilentChConverter" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AgilentChConverter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AgilentChConverter" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="AgilentChFileParserNIO_2_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AgilentChConverter" type="b2602c69:ProjectViewProjectNode" />
@@ -106,6 +151,10 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="AgilenBinaryReaders" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AgilentChConverter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -114,12 +163,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore&#10;true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="/opt/java/jdkO18162/jdk1.8.0_162/bin/jvisualvm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.12543797" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunDashboard">
@@ -150,9 +200,10 @@
       </method>
     </configuration>
     <configuration name="AgilentChFileParserNIO_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="AgilenBinaryReaders.AgilentChFileParserNIO_2" />
-      <module name="AgilentReader" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="AgilentChFileParserNIO_2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="AgilenBinaryReaders.*" />
@@ -175,6 +226,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AgilentChFileParserNIO_2-1.0-SNAPSHOT.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/AgilentChFileParserNIO_2-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AgilentChFileParserNIO_2.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/AgilentChFileParserNIO_2_jar/AgilentChFileParserNIO_2.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AgilentReader.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/AgilentReader_jar/AgilentReader.jar" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
@@ -186,6 +249,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.AgilentChFileParserNIO_2" />
+        <item itemvalue="JAR Application.AgilentChFileParserNIO_2.jar" />
+        <item itemvalue="JAR Application.AgilentChFileParserNIO_2-1.0-SNAPSHOT.jar" />
+        <item itemvalue="JAR Application.AgilentReader.jar" />
         <item itemvalue="Application.AgilentChFileParser" />
       </list>
     </recent_temporary>
@@ -215,14 +281,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544779703319</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="NIO 2 works _ file creation corrected">
+      <created>1544779923410</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544779923410</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12298603" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15306123" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -231,7 +304,7 @@
       <window_info id="Learn" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296593" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19138277" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2254509" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33767536" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -247,9 +320,9 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.20408164" />
       <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Maven-2 Build" order="5" />
+      <window_info anchor="right" id="Maven-2 Build" order="5" weight="0.32975295" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Jenkins" order="7" />
     </layout>
@@ -259,7 +332,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="step one to NIO2" />
     <MESSAGE value="NIO 2 works" />
-    <option name="LAST_COMMIT_MESSAGE" value="NIO 2 works" />
+    <MESSAGE value="NIO 2 works _ file creation corrected" />
+    <option name="LAST_COMMIT_MESSAGE" value="NIO 2 works _ file creation corrected" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -308,12 +382,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="74" column="154" selection-start-line="74" selection-start-column="154" selection-end-line="74" selection-end-column="154" />
+        <state relative-caret-position="258">
+          <caret line="16" column="76" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -323,11 +420,18 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
+          <artifact-editor>
+            <show-content>
+              <type id="library" />
+              <type id="artifact" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>AgilentChFileParserNIO_2:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.12543797" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -363,7 +467,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.12543797" />
               </list>
             </option>
           </splitter-proportions>
@@ -371,10 +475,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>AgilentChFileParserNIO_2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.12543797" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -394,6 +500,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: commons-io:commons-io:2.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
