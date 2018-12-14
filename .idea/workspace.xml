@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c2c4efb-dbfd-40ca-9997-81969e0733fd" name="Default Changelist" comment="">
+    <list default="true" id="9eb25c4e-17a7-49dd-a9a0-84a6cc4f5ba4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Oleg_Fedulov.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,54 +16,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1648764268">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.45" value="1" />
-          <entry key="project.opened" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="76" />
-          <entry key="java" value="1249" />
-          <entry key="txt" value="62" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="1249" />
-          <entry key="PLAIN_TEXT" value="138" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
-              <folding>
-                <element signature="method#getHexStringFromByteArray#0;class#AgilentChFileParser#0" expanded="true" />
-                <element signature="method#hex2Decimal#0;class#AgilentChFileParser#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="188">
+              <caret line="49" column="48" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -69,92 +30,36 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="147" column="24" selection-start-line="147" selection-start-column="24" selection-end-line="147" selection-end-column="24" />
+            <state relative-caret-position="-1345">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#main#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#setNextOffsetForRandomFile#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#setNextTimePointInTimeScale#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#outPutFileOpen#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#getInputCHFileToParse#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#getIntensityAbsTmpBufferSize#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#getOffsetDelta#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#getInitialRandomFileStartReadPointOffset#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#getTimeStep#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#getInitialIntensityValue#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#getInitialTimePoint#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#getOutPath#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#byteArray2HexString#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-                <element signature="method#hexString2Decimal#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/io/RandomAccessFile.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/jre/lib/rt.jar!/sun/nio/fs/WindowsException.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="562" column="4" lean-forward="true" selection-start-line="562" selection-start-column="4" selection-end-line="562" selection-end-column="4" />
-              <folding>
-                <element signature="e#22648#22825#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="381">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>getCommonByteArraySize</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>commonByteArraySize</replace>
-    </replaceStrings>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="/home/mercenery/Documents/lab4/javalab-spring" value="PREVIEW" />
-        <entry key="/home/mercenery/Documents/lab5/javalab-spring" value="PREVIEW" />
-        <entry key="/home/mercenery/MySpringLabs/javalab-spring" value="PREVIEW" />
-        <entry key="/home/mercenery/MySpringLabs/lapin/lab6/after/javalab-spring" value="PREVIEW" />
-        <entry key="/home/mercenery/MySpringLabs/lapin/lab8/after/javalab-spring" value="PREVIEW" />
-        <entry key="/home/mercenery/MySpringLabs/my/after/javalab-spring" value="PREVIEW" />
-        <entry key="/home/mercenery/MySpringLabs/my/lab8transact/before/javalab-spring" value="PREVIEW" />
-        <entry key="/home/mercenery/VarDictJava" value="PREVIEW" />
-        <entry key="/home/mercenery/javalab-spring" value="PREVIEW" />
-        <entry key="/home/mercenery/pho-htsjdk" value="PREVIEW" />
-        <entry key="/home/mercenery/pho-picard" value="PREVIEW" />
-        <entry key="/home/mercenery/picard" value="PREVIEW" />
-        <entry key="/media/mercenery/01D36EAF15659F70/epamwork/pho-picard" value="PREVIEW" />
-        <entry key="/media/root/01D36EAF15659F701/epamwork/astrozenika/VarDictJava" value="PREVIEW" />
-        <entry key="/media/root/01D36EAF15659F701/epamwork/pho-picard" value="PREVIEW" />
-        <entry key="$USER_HOME$/temp/VarDictJava-1.5.1" value="PREVIEW" />
-        <entry key="$USER_HOME$/work/astrazeneca/vardict" value="PREVIEW" />
-        <entry key="$USER_HOME$/work/astrazeneca/vardictjava/vardict" value="PREVIEW" />
-        <entry key="$USER_HOME$/work/astrazeneca/vardictjava151LAB" value="PREVIEW" />
-        <entry key="$USER_HOME$/work/astrazeneca/vardictjava151LAB/vardict" value="PREVIEW" />
-        <entry key="$USER_HOME$/work/astrazeneca/vardictjavahub/VarDictJava" value="PREVIEW" />
-        <entry key="$USER_HOME$/work/bfxtools" value="PREVIEW" />
-        <entry key="$USER_HOME$/work/bfxtools/bfx-tools" value="PREVIEW" />
-        <entry key="$USER_HOME$/work/htsjdk" value="PREVIEW" />
-        <entry key="$USER_HOME$/work/javalab-spring" value="PREVIEW" />
-        <entry key="$USER_HOME$/work/pet-sitter" value="PREVIEW" />
-        <entry key="$USER_HOME$/work/pho-htsjdk" value="PREVIEW" />
-        <entry key="$USER_HOME$/work/spring-course" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../beauit/project/gitlab/all-modules" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../beauit/project/gitlab/all-modules/TeleServer" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../beauit/ttm/TeleServer" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../beauit/ttm/elasticHTTP" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../pho-htsjdk" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../vardict" value="PREVIEW" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -164,18 +69,11 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="createModuleGroups" value="true" />
-        <option name="dedicatedModuleDir" value="D:\work\epam\openchrome\myrepo\AgilentChConverter" />
-        <option name="downloadDocsAutomatically" value="true" />
+        <option name="dedicatedModuleDir" value="C:\work\OpenChrome\libs\AgilentReader\AgilentChConverter" />
         <option name="downloadSourcesAutomatically" value="true" />
         <option name="importAutomatically" value="true" />
         <option name="lookForNested" value="true" />
@@ -183,10 +81,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="698" />
+    <option name="x" value="1" />
+    <option name="width" value="1536" />
+    <option name="height" value="1177" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -195,57 +92,16 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AgilentChConverter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AgilentChConverter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AgilentChConverter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AgilentChConverter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AgilentChConverter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AgilentChConverter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AgilentChConverter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AgilentChConverter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AgilentChConverter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AgilentChConverter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="AgilenBinaryReaders" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544739908921" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_192/bin/jvisualvm.exe" />
+    <property name="last_opened_file_path" value="/opt/java/jdkO18162/jdk1.8.0_162/bin/jvisualvm" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -300,7 +156,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -308,10 +164,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.AgilentChFileParserNIO_2" />
-      <item itemvalue="Application.AgilentChFileParser" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.AgilentChFileParserNIO_2" />
@@ -324,149 +176,63 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9c2c4efb-dbfd-40ca-9997-81969e0733fd" name="Default Changelist" comment="" />
-      <created>1544648239252</created>
+      <changelist id="9eb25c4e-17a7-49dd-a9a0-84a6cc4f5ba4" name="Default Changelist" comment="" />
+      <created>1544707093017</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1544648239252</updated>
-      <workItem from="1544648241121" duration="684000" />
-      <workItem from="1544649171174" duration="665000" />
-      <workItem from="1544718983054" duration="957000" />
-      <workItem from="1544728144298" duration="12202000" />
+      <updated>1544707093017</updated>
     </task>
-    <task id="LOCAL-00001" summary="beautify">
-      <created>1544649819175</created>
+    <task id="LOCAL-00001" summary="step one to NIO2">
+      <created>1544710976817</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1544649819175</updated>
+      <updated>1544710976817</updated>
     </task>
-    <task id="LOCAL-00002" summary="loop optimized">
-      <created>1544729975080</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1544729975080</updated>
-    </task>
-    <task id="LOCAL-00003" summary="strategy pattern implemented">
-      <created>1544730300922</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1544730300922</updated>
-    </task>
-    <task id="LOCAL-00004" summary="corrections">
-      <created>1544730600610</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1544730600610</updated>
-    </task>
-    <task id="LOCAL-00005" summary="corrections">
-      <created>1544731010676</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1544731010676</updated>
-    </task>
-    <task id="LOCAL-00006" summary="corrections">
-      <created>1544731318066</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1544731318066</updated>
-    </task>
-    <task id="LOCAL-00007" summary="corrections">
-      <created>1544733976164</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1544733976164</updated>
-    </task>
-    <task id="LOCAL-00008" summary="corrections">
-      <created>1544734890074</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1544734890074</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14508000" />
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11346999" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12298603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Learn" order="3" />
-      <window_info id="DB Browser" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Image Layers" order="8" />
+      <window_info id="DB Browser" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Learn" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32921174" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2828439" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.22565688" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3296593" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35771543" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33767536" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
-      <window_info anchor="bottom" id="SBT Console" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Gerrit" order="13" />
-      <window_info anchor="bottom" id="Usages" order="14" />
-      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="16" weight="0.16692427" />
-      <window_info anchor="bottom" id="Messages" order="17" />
-      <window_info anchor="bottom" id="Inspector" order="18" side_tool="true" />
-      <window_info anchor="bottom" id="Regex Tester" order="19" />
-      <window_info anchor="bottom" id="Dependencies Viewer" order="20" />
-      <window_info anchor="bottom" id="PrintInConsole" order="21" />
-      <window_info anchor="bottom" id="Run with VisualVM" order="22" />
-      <window_info anchor="bottom" id="Debug with VisualVM" order="23" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="GitLabIntegration" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Maven-2 Build" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Jenkins" order="7" />
-      <window_info anchor="right" id="SciView" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="UsagesViewTool">
-    <version id="1" />
-    <tabs />
-    <default_view_options>
-      <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
-    </default_view_options>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="beautify" />
-    <MESSAGE value="loop optimized" />
-    <MESSAGE value="strategy pattern implemented" />
-    <MESSAGE value="corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrections" />
+    <MESSAGE value="step one to NIO2" />
+    <option name="LAST_COMMIT_MESSAGE" value="step one to NIO2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -474,82 +240,44 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java</url>
-          <line>26</line>
-          <properties field="totalTimeValueInCurrentStep" class="AgilenBinaryReaders.AgilentChFileParserNIO_2" />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java</url>
-          <line>100</line>
+          <line>46</line>
           <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java</url>
-          <line>101</line>
-          <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="fullChInByteArray[6148]" language="JAVA" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="watch">
-      <expression>
-        <expression-string>fullChInByteArray[6148]</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/io/RandomAccessFile.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="562" column="4" lean-forward="true" selection-start-line="562" selection-start-column="4" selection-end-line="562" selection-end-column="4" />
-          <folding>
-            <element signature="e#22648#22825#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="188">
+          <caret line="49" column="48" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/nio/file/Files.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
-          <folding>
-            <element signature="method#getHexStringFromByteArray#0;class#AgilentChFileParser#0" expanded="true" />
-            <element signature="method#hex2Decimal#0;class#AgilentChFileParser#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="293">
+          <caret line="3291" column="45" selection-start-line="3291" selection-start-column="45" selection-end-line="3291" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/jre/lib/rt.jar!/sun/nio/fs/WindowsException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="147" column="24" selection-start-line="147" selection-start-column="24" selection-end-line="147" selection-end-column="24" />
+        <state relative-caret-position="-1345">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#setNextOffsetForRandomFile#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#setNextTimePointInTimeScale#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#outPutFileOpen#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#getInputCHFileToParse#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#getIntensityAbsTmpBufferSize#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#getOffsetDelta#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#getInitialRandomFileStartReadPointOffset#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#getTimeStep#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#getInitialIntensityValue#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#getInitialTimePoint#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#getOutPath#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#byteArray2HexString#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
-            <element signature="method#hexString2Decimal#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -557,9 +285,79 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>jdk1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8 (2)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.8 (1)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -570,8 +368,5 @@
         </settings>
       </state>
     </states>
-  </component>
-  <component name="se.expertsystem.intellij.aop.aspectj.AspectJProjectComponent">
-    <setting name="isActivated" value="false" />
   </component>
 </project>
