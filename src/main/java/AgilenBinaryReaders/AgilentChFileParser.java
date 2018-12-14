@@ -47,7 +47,7 @@ public class AgilentChFileParser {
             int randomFileLengthCount = 0;
         
             // main loop start until counter less than .ch file length
-            while (randomFileLengthCount < 12181) {
+            while (randomFileLengthCount < 12191) {
     
                 // file length counter set
                 randomFileLengthCount++;
