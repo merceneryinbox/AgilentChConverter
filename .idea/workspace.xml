@@ -7,10 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eb25c4e-17a7-49dd-a9a0-84a6cc4f5ba4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilityPack/Converter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/NewOffsetsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/NewOffsetsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/offsets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/offsets.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,10 +25,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="91" column="79" selection-start-line="91" selection-start-column="79" selection-end-line="91" selection-end-column="79" />
+            <state relative-caret-position="286">
+              <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#getInitialInputFileStartByteReadPointOffset#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
+                <element signature="method#getInitialIntensityValue#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
                 <element signature="method#getOutPath#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
                 <element signature="method#generateOutPutPathName#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
               </folding>
@@ -39,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/offsets.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="28">
+              <caret line="16" selection-start-line="16" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -48,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/NewOffsetsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="162">
+              <caret line="9" column="49" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#main#0;class#NewOffsetsTest#0" expanded="true" />
@@ -96,9 +98,9 @@
         <option value="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/JFileChooserDemo.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileChooser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/offsets.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java" />
         <option value="$PROJECT_DIR$/src/main/java/utilityPack/Converter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/offsets.txt" />
         <option value="$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/NewOffsetsTest.java" />
       </list>
     </option>
@@ -130,10 +132,9 @@
     <option name="jreName" value="#JAVA_HOME" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1216" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1177" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -239,7 +240,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AgilentChFileParserNIO_2">
+  <component name="RunManager" selected="Application.NewOffsetsTest">
     <configuration name="AgilentChFileParserNIO_2" type="Application" factoryName="Application" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8 (2)" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -297,8 +298,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AgilentChFileParserNIO_2" />
         <item itemvalue="Application.NewOffsetsTest" />
+        <item itemvalue="Application.AgilentChFileParserNIO_2" />
         <item itemvalue="JAR Application.AgilentChFileParserNIO_2.jar" />
       </list>
     </recent_temporary>
@@ -350,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545043778936</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="divide responsibilities">
+      <created>1545054844981</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545054844981</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -360,7 +368,7 @@
     <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1084855" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22444445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -371,7 +379,7 @@
       <window_info id="Image Layers" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32921174" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989259" weight="0.23446894" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989259" visible="true" weight="0.23446894" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.50701404" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -476,10 +484,33 @@
     <MESSAGE value="NIO 2 works _ file creation corrected" />
     <MESSAGE value="gui works" />
     <MESSAGE value="offsets added" />
-    <option name="LAST_COMMIT_MESSAGE" value="offsets added" />
+    <MESSAGE value="divide responsibilities" />
+    <option name="LAST_COMMIT_MESSAGE" value="divide responsibilities" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java</url>
+          <line>53</line>
+          <properties class="AgilenBinaryReaders.AgilentChFileParserNIO_2" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/NewOffsetsTest.java</url>
+          <line>13</line>
+          <properties class="AgilenBinaryReaders.NewOffsetsTest" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParser.java" />
@@ -545,13 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/offsets.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utilityPack/Converter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -563,12 +587,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/offsets.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="16" selection-start-line="16" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/nio/charset/Charset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="837" column="31" selection-start-line="837" selection-start-column="31" selection-end-line="837" selection-end-column="31" />
+          <folding>
+            <element signature="method#encode#0;class#Charset#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/AgilentChFileParserNIO_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="91" column="79" selection-start-line="91" selection-start-column="79" selection-end-line="91" selection-end-column="79" />
+        <state relative-caret-position="286">
+          <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getInitialInputFileStartByteReadPointOffset#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
+            <element signature="method#getInitialIntensityValue#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
             <element signature="method#getOutPath#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
             <element signature="method#generateOutPutPathName#0;class#AgilentChFileParserNIO_2#0" expanded="true" />
           </folding>
@@ -577,8 +620,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AgilenBinaryReaders/NewOffsetsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="162">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#NewOffsetsTest#0" expanded="true" />

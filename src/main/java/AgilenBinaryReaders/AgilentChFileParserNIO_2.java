@@ -67,8 +67,8 @@ public class AgilentChFileParserNIO_2 {
 
 				// read two bytes = absolute intensity value into two-bytes buffer from current offset of full input
 				// file buffer for further new line forming
-				for (int i = 0; i < intensityAbsTmpBufferSize; i++) {
-					intensityAbsolutTmpBuffer[i] = fullChFileAsOneByteArray[inputFileByteReadPointOffset++];
+				for (int i = 0; i < intensityAbsTmpBufferSize; i++, inputFileByteReadPointOffset++) {
+					intensityAbsolutTmpBuffer[i] = fullChFileAsOneByteArray[inputFileByteReadPointOffset];
 				}
 
 				// get converted from 2 bytes  big-endian DWORD hex string to -> unsigned int16 to -> signed int 16 =
