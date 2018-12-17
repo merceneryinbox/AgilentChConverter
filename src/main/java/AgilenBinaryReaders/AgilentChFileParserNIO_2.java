@@ -1,6 +1,7 @@
 package AgilenBinaryReaders;
 
 import sun.nio.fs.DefaultFileSystemProvider;
+import utilityPack.Converter;
 
 import javax.swing.*;
 import java.io.FileNotFoundException;
@@ -16,13 +17,10 @@ import java.nio.file.spi.FileSystemProvider;
 public class AgilentChFileParserNIO_2 {
 
 	// utility for convert
-	final static char[] hexArray = "0123456789ABCDEF".toCharArray();
 	final static String defaultChFilePath = "C:\\work\\OpenChrome\\Sample 1\\002-1401.D\\DAD1A.ch";
-	final static String defaultOutputFile = "C:\\work\\DAD1A_TWO_COLUMNS.csv";
 	final static String header = "Time(ms),Intensity(abs)\n";
 	final static Charset charset = Charset.forName("UTF-8");
 	static Path chFilePath;
-
 	// time scale start value set (represented as runtime computation so it might have been changed in using with
 	// another chromatography file)
 	static int totalTimeValueInCurrentStep = getInitialTimePoint();
@@ -60,10 +58,11 @@ public class AgilentChFileParserNIO_2 {
 		fileChooser.setVisible(false);
 		chFilePath = fileChooser.getFileOrDirectoryPath();
 
+		// get path to ch file to parse
 		byte[] fullChFileAsOneByteArray = Files.readAllBytes(Paths.get(args.length != 2 ? (chFilePath == null ? defaultChFilePath : chFilePath.toString()) : args[1]));
 		int fullInputFileArrayLength = fullChFileAsOneByteArray.length;
 		try {
-			// main loop start until counter less than .ch file length
+			// main loop start until offset less than .ch file length
 			while (inputFileByteReadPointOffset < fullInputFileArrayLength) {
 
 				// read two bytes = absolute intensity value into two-bytes buffer from current offset of full input
@@ -75,7 +74,7 @@ public class AgilentChFileParserNIO_2 {
 				// get converted from 2 bytes  big-endian DWORD hex string to -> unsigned int16 to -> signed int 16 =
 				// absolute intensity addition to total intensity
 				// compute total scale value for intensity absolute in current step
-				short intensityCurrentStepIncreaseValue = (short) hexString2Decimal(byteArray2HexString(intensityAbsolutTmpBuffer));
+				short intensityCurrentStepIncreaseValue = Converter.getSignedInt16From2ByteArrayWithStringHexeValue(intensityAbsolutTmpBuffer);
 
 				// create new intensity point for current time point
 				totalIntensityValueInCurrentStep = totalIntensityValueInCurrentStep + intensityCurrentStepIncreaseValue;
@@ -147,38 +146,5 @@ public class AgilentChFileParserNIO_2 {
 		// Change fileName
 		String outputFileName = inputFileName + "_.csv";
 		return directoryOfInputPath + outputFileName;
-	}
-
-	public static String byteArray2HexString(byte[] bytes) {
-
-		char[] hexChars = new char[bytes.length * 2];
-		for (int j = 0; j < bytes.length; j++) {
-			int v = bytes[j] & 0xFF;
-			hexChars[j * 2] = hexArray[v >>> 4];
-			hexChars[j * 2 + 1] = hexArray[v & 0x0F];
-		}
-		return new String(hexChars);
-	}
-
-	public static int getDecimalFromHexByteArray(byte[] bytes) {
-
-		int result = 0;
-		for (int i = 0; i < bytes.length; i++) {
-			result = result | (bytes[i] & 0xff) >> (i * 8);
-		}
-		return result;
-	}
-
-	public static int hexString2Decimal(String s) {
-
-		String digits = "0123456789ABCDEF";
-		s = s.toUpperCase();
-		int val = 0;
-		for (int i = 0; i < s.length(); i++) {
-			char c = s.charAt(i);
-			int d = digits.indexOf(c);
-			val = 16 * val + d;
-		}
-		return val;
 	}
 }
