@@ -27,4 +27,5 @@ hs_err_pid*
 .gitignore
 target/generated-sources/
 target/generated-test-sources/
-.*
+AgilentChFileParserNIO_2.iml
+maven-archiver.iml
