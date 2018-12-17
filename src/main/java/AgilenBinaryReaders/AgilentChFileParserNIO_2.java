@@ -55,7 +55,7 @@ public class AgilentChFileParserNIO_2 {
 
 	public static void main(String[] args) throws Exception {
 		AgilentChFileChooser fileChooser = new AgilentChFileChooser();
-		fileChooser.setSize(600, 600);
+		fileChooser.setSize(100, 100);
 		fileChooser.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		fileChooser.setVisible(false);
 		chFilePath = fileChooser.getFileOrDirectoryPath();
@@ -92,7 +92,7 @@ public class AgilentChFileParserNIO_2 {
 			// store time points correspond to intensity into result csv file
 			Files.write(getOutPath(), (charset.encode(CharBuffer.wrap(resultStringAppender.toString().toCharArray())).array()), StandardOpenOption.CREATE);
 			FileSystemProvider fileSystemProvider = DefaultFileSystemProvider.create();
-			//			fileSystemProvider.
+
 			System.exit(0);
 		} catch (FileNotFoundException fnf) {
 			System.err.println("Input file " + defaultChFilePath + "seem to be in some another place or it's have been opened in time of access." + "\nPlease check this before " + "new attempt !");
@@ -141,7 +141,7 @@ public class AgilentChFileParserNIO_2 {
 	}
 
 	private static String generateOutPutPathName(Path chFilePath) {
-		String directoryOfInputPath = chFilePath.getParent().toString();
+		String directoryOfInputPath = chFilePath.getParent().toString() + "\\";
 		String inputFileName = chFilePath.getFileName().toString();
 
 		// Change fileName
