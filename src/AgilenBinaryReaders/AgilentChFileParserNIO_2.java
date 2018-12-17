@@ -95,6 +95,9 @@ public class AgilentChFileParserNIO_2 {
 			System.exit(0);
 		} catch (FileNotFoundException fnf) {
 			System.err.println("Input file " + defaultChFilePath + "seem to be in some another place or it's have been opened in time of access." + "\nPlease check this before " + "new attempt !");
+			
+		} finally {
+			System.exit(-1);
 		}
 	}
 
