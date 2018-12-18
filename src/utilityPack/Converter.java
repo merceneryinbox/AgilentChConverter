@@ -1,7 +1,7 @@
 package utilityPack;
 
 public class Converter {
-	
+
 	final static char[] hexArray = "0123456789ABCDEF".toCharArray();
 
 	public static short getSignedInt16From2ByteArrayWithStringHexeValue(byte[] byteArray) {

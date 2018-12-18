@@ -7,8 +7,8 @@ import java.nio.file.Paths;
 
 public class NewOffsetsTest {
 	final static Charset charset = Charset.forName("UTF-8");
-	static byte[] intensityAbsolutTmpBuffer = new byte[24];
-	static int inputFileByteReadPointOffset = 348;
+	static byte[] intensityAbsolutTmpBuffer = new byte[3];
+	static int inputFileByteReadPointOffset = 2534;
 
 	public static void main(String[] args) throws IOException {
 		byte[] fullChFileAsOneByteArray = Files.readAllBytes(Paths.get("c:\\work\\OpenChrome\\Sample 1\\002-1401.D\\DAD1A.ch"));
